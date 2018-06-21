@@ -3,7 +3,6 @@ Description = Jboss Agent start
 After = network.target auditd.service
 
 [Service]
-Type=forking
 ExecStart=/home/student/jboss/EAP_6.4/jboss-eap-6.4/bin/launch.sh standalone /home/student/jboss/EAP_6.4/jboss-eap-6.4/standalone/configuration/standalone.xml 0.0.0.0
 KillMode=mixed
 Restart=on-failure
