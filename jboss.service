@@ -3,11 +3,9 @@ Description = Jboss Agent start
 After = network.target auditd.service
 
 [Service]
-ExecStart=/home/student/jboss/EAP_6.4/jboss-eap-6.4/bin/standalone.sh -c /home/student/jboss/EAP_6.4/jboss-eap-6.4/standalone/configuration/standalone.xml -b 0.0.0.0
+ExecStart=/home/student/jboss/EAP_6.4/jboss-eap-6.4/bin/standalone.sh -b 0.0.0.0 -bmanagement 0.0.0.0
 KillMode=mixed
 Restart=on-failure
-User=jboss-EAP
-Group=jboss-EAP
 
 [Install]    
 WantedBy=multi-user.target
