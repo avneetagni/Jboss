@@ -1,4 +1,4 @@
-     #! /bin/sh
+#! /bin/sh
 
 curl -L -O https://access.redhat.com/cspdownload/62539b312a9759ff899a2bf2d543501e/5b2b4a1b/JBEAP-6.4.0/jboss-eap-6.4.0.zip 
 #git clone https://github.com/EdwinPhilip/jboss_zip.git
